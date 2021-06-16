@@ -27,3 +27,12 @@
 
 ## run
 1. python Adversarial_DA_seg_trainer.py
+
+
+## Citation
+
+Please cite the paper if ypu found this repository useful:
+
+```
+
+```
