@@ -34,5 +34,12 @@
 Please cite the paper if ypu found this repository useful:
 
 ```
-
+@misc{wu2021unsupervised,
+      title={Unsupervised Domain Adaptation with Variational Approximation for Cardiac Segmentation}, 
+      author={Fuping Wu and Xiahai Zhuang},
+      year={2021},
+      eprint={2106.08752},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
