@@ -14,10 +14,10 @@
 
 1. edit the following hyperparameters in the 'Adversarial_DA_seg_trainer.py':
 
-* Alpha=  (1e0; weight of target vae)
-- Beta=   (1e-3; weight of distance)
-- PredLamda=    (1e3; weight of prediction loss in vae)
-* KLDLamda=   (1.0;weight of kld loss in vae)
+* Alpha=  (1e0; weight of target vae; change according to your tasks)
+- Beta=   (1e-3; weight of distance; change according to your tasks)
+- PredLamda=    (1e3; weight of prediction loss in vae; change according to your tasks)
+* KLDLamda=   (1.0;weight of kld loss in vae; change according to your tasks)
 
 
 ## prepare dataset
