@@ -1,5 +1,6 @@
 
-#Usage
+# Usage
+article :[Unsupervised Domain Adaptation with Variational Approximation for Cardiac Segmentation](https://arxiv.org/abs/2106.08752v1)
 
 ## Change your path
 
