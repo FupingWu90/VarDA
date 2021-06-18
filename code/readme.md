@@ -28,6 +28,7 @@ article :[Unsupervised Domain Adaptation with Variational Approximation for Card
 
 ## run
 1. python Adversarial_DA_seg_trainer.py
+2. note: if using the regularization term only, select the code in 'general' file, if using the slice position infomation to constrain the network, select the code in 'add_position_info' file.
 
 
 ## Citation
