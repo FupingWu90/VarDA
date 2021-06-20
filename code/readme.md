@@ -36,7 +36,7 @@ or [paper](https://ieeexplore.ieee.org/document/9459711)
 
 Please cite the paper if ypu found this repository useful:
 
-'''
+''
 
 @ARTICLE{9459711,
   author={Wu, Fuping and Zhuang, Xiahai},
@@ -47,6 +47,6 @@ Please cite the paper if ypu found this repository useful:
   number={},
   pages={1-13},
   doi={10.1109/TMI.2021.3090412}}
- 
- '''
+
+ ''
 
