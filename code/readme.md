@@ -1,6 +1,7 @@
 
 # Usage
 article :[Unsupervised Domain Adaptation with Variational Approximation for Cardiac Segmentation](https://arxiv.org/abs/2106.08752v1)
+or [paper](https://ieeexplore.ieee.org/document/9459711)
 
 ## Change your path
 
@@ -34,14 +35,15 @@ article :[Unsupervised Domain Adaptation with Variational Approximation for Card
 ## Citation
 
 Please cite the paper if ypu found this repository useful:
+'''
+@ARTICLE{9459711,
+  author={Wu, Fuping and Zhuang, Xiahai},
+  journal={IEEE Transactions on Medical Imaging}, 
+  title={Unsupervised Domain Adaptation with Variational Approximation for Cardiac Segmentation}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-13},
+  doi={10.1109/TMI.2021.3090412}}
+  '''
 
-```
-@misc{wu2021unsupervised,
-      title={Unsupervised Domain Adaptation with Variational Approximation for Cardiac Segmentation}, 
-      author={Fuping Wu and Xiahai Zhuang},
-      year={2021},
-      eprint={2106.08752},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
