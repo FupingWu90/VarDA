@@ -11,7 +11,7 @@ This dataset was used as the source data
 This dataset was from  the [MS-CMRSeg2019 challenge:](http://www.sdspeople.fudan.edu.cn/zhuangxiahai/0/mscmrseg19/);
 The 45 labeled data was all cropped into 192\time 192;
 These 45 images was used as the target data;
-images of id 1-5 with labels were used as validation dataset, and the other were used as test dataset.
+images of id 1-5 with labels were used as validation dataset, and the other were used as training and test dataset (transductive learning).
 
 
 ## Citation
