@@ -12,6 +12,7 @@ This dataset was from  the [MS-CMRSeg2019 challenge:](http://www.sdspeople.fudan
 The 45 labeled data was all cropped into 192\time 192;
 These 45 images was used as the target data;
 images of id 1-5 with labels were used as validation dataset, and the other were used as training and test dataset (transductive learning).
+(Note: users can also split the 45 LGE images into training and validation dataset for cross-validation.)
 
 
 ## Citation
