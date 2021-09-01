@@ -15,7 +15,24 @@ import torchvision.transforms as transforms
 import time
 import random
 from skimage import transform
+import torch.nn.init as init
 
+def init_conv(conv):
+    init.xavier_uniform_(conv.weight)
+    if conv.bias is not None:
+        conv.bias.data.zero_()
+
+class Spatial_Attention(nn.Module):
+    def __init__(self, in_channel):
+        super(Spatial_Attention, self).__init__()
+        self.activate = nn.Sequential(nn.Conv2d(in_channel, 1,kernel_size = 1),
+                                      )
+
+    def forward(self, x):
+        actition = self.activate(x)
+        out = torch.mul(x, actition)
+
+        return out
 
 class VAE(nn.Module):
     def __init__(self, KERNEL=3,PADDING=1):
@@ -73,7 +90,7 @@ class VAE(nn.Module):
                                          nn.ReLU(inplace=True),
                                         )
 
-        self.down4fc1 = nn.Sequential(nn.Conv2d(256, 256, kernel_size=KERNEL, padding=PADDING),
+        self.down4fc1 = nn.Sequential(Spatial_Attention(256),
                                       nn.InstanceNorm2d(256),
                                       nn.Tanh())
         self.down4fc2 = nn.Sequential(nn.Conv2d(256, 256, kernel_size=KERNEL, padding=PADDING),
@@ -89,7 +106,7 @@ class VAE(nn.Module):
                                        nn.InstanceNorm2d(128),
                                        nn.ReLU(inplace=True))
 
-        self.down2fc1 = nn.Sequential(nn.Conv2d(128, 128, kernel_size=KERNEL, padding=PADDING),
+        self.down2fc1 = nn.Sequential(Spatial_Attention(128),
                                       nn.InstanceNorm2d(128),
                                       nn.Tanh())
         self.down2fc2 = nn.Sequential(nn.Conv2d(128, 128, kernel_size=KERNEL, padding=PADDING),
@@ -105,7 +122,7 @@ class VAE(nn.Module):
                                        nn.InstanceNorm2d(64),
                                        nn.ReLU(inplace=True),)
 
-        self.fc1 = nn.Sequential(nn.Conv2d(64, 64, kernel_size=KERNEL, padding=PADDING),
+        self.fc1 = nn.Sequential(Spatial_Attention(64),
                                  nn.InstanceNorm2d(64),
                                  nn.Tanh())
         self.fc2 = nn.Sequential(nn.Conv2d(64, 64, kernel_size=KERNEL, padding=PADDING),
