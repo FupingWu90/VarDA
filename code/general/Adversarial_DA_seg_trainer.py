@@ -55,7 +55,7 @@ def ADA_Train(source_vae_loss_list,source_seg_loss_list,target_vae_loss_list,dis
     i=0
 
 
-    while i<len(A_iter) and i<len(B_iter):
+    while i<len(A_iter)-1 and i<len(B_iter)-1:
         ct,ct_down2,ct_down4,label,label_down2,label_down4 ,info_ct= A_iter.next()
         mr,mr_down2,mr_down4,info_mr= B_iter.next()
 
