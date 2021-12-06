@@ -4,8 +4,10 @@ article :[Unsupervised Domain Adaptation with Variational Approximation for Card
 or [paper](https://ieeexplore.ieee.org/document/9459711)
 
 ## Change your path
+1. requirement
+(1) pytorch 0.4
 
-1. edit the following pathway in the 'Adversarial_DA_seg_trainer.py':
+2. edit the following pathway in the 'Adversarial_DA_seg_trainer.py':
 
 * prefix='~/experiments/loss_tSNE'
 - dataset_dir = '~/Dataset/Patch192'
