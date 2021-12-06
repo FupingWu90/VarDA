@@ -9,7 +9,7 @@ or [paper](https://ieeexplore.ieee.org/document/9459711)
 
 * prefix='~/experiments/loss_tSNE'
 - dataset_dir = '~/Dataset/Patch192'
-* TestDir=dataset_dir+'/LGE_Vali/'
+* TestDir=dataset_dir+'/LGE_Vali/' (use 1-5 LGE as validation dataset, and 6-45 LGE as test dataset)
 
 
 ## tune the hyperparameters
