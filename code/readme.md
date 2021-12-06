@@ -5,7 +5,7 @@ or [paper](https://ieeexplore.ieee.org/document/9459711)
 
 ## Change your path
 1. requirement
-2. 
+
 * pytorch 0.4
 
 2. edit the following pathway in the 'Adversarial_DA_seg_trainer.py':
