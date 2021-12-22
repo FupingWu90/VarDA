@@ -301,11 +301,11 @@ def main():
 
         SourceData = C0_TrainSet(dataset_dir,35)
         SourceData_loader = DataLoader(SourceData, batch_size=BatchSize, shuffle=True, num_workers=WORKERSNUM,
-                                       pin_memory=True)
+                                       pin_memory=True,drop_last = True)
 
         TargetData = LGE_TrainSet(dataset_dir,sample_num)
         TargetData_loader = DataLoader(TargetData, batch_size=BatchSize, shuffle=True, num_workers=WORKERSNUM,
-                                       pin_memory=True)
+                                       pin_memory=True,drop_last = True)
 
         vaeencoder.apply(init_weights)
         source_vaedecoder.apply(init_weights)
